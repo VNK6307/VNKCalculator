@@ -10,13 +10,8 @@ public class Main {
         calc.println.accept(b);
 
         System.out.println("   Деление:");
-//     Предотвращение остановки работы программы в случае деления на 0.
-        try {
-            int c = calc.devide.apply(a, b);
-            calc.println.accept(c);
-        } catch (RuntimeException e) {
-            System.out.println("Произошла попытка деления на 0! Проверьте данные.");
-        }
+        int c = calc.devide.apply(a, b);
+        calc.println.accept(c);
 
         System.out.println("   Умножение:");
         int m = calc.multiply.apply(3, 7);
